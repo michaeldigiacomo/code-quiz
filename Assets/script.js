@@ -1,32 +1,26 @@
 // Create a start button.
-var timeLeft = 60;
+var timeLeft = 5;
 var questions = [
     {
-        question: "What color is the sky?", 
-        choices: ["Red", "Blue", "Green"],
-        correct: "Blue",
+        question: "Which of the following is true about variable naming conventions in JavaScript?", 
+        choices: ["JavaScript variable names must begin with a letter or the underscore character", "JavaScript variable names are case sensitive", "Both of the above"],
+        correct: "Both of the above",
     },
     {
-        question: "What color is the sky?", 
-        choices: ["Red", "Blue", "Green"],
-        correct: "Blue",
+        question: "Which of the following function of String object returns the calling string value converted to upper case?", 
+        choices: ["toLocaleUpperCase()", "toUpperCase()", "toString()"],
+        correct: "toUpperCase()",
     },
     {
-        question: "What color is the sky?", 
-        choices: ["Red", "Blue", "Green"],
-        correct: "Blue",
+        question: "What is my middle name?", 
+        choices: ["Alfred", "Christopher", "Francis"],
+        correct: "Francis",
     },
     {
-        question: "What color is the sky?", 
-        choices: ["Red", "Blue", "Green"],
-        correct: "Blue",
+        question: "What are variables used for in JavaScript Programs?", 
+        choices: ["Storing numbers, dates, or other values", "Varying randomly", "None of the above"],
+        correct: "Storing numbers, dates, or other values",
     },
-    {
-        question: "What color is the sky?", 
-        choices: ["Red", "Blue", "Green"],
-        correct: "Blue",
-    },
-
 ];
 // Grab the button element in the javascript.
 var startButton = document.getElementById("start-button");
