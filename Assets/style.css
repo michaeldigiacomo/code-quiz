@@ -2,7 +2,6 @@
     display: none;
 }
 
-button {
-    text-align: center;
-    font-size: 35px;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
