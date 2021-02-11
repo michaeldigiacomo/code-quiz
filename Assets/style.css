@@ -6,9 +6,6 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .questions {
@@ -18,3 +15,10 @@
     font-weight: 500;
     padding: 50;
 }
+ /* Index 2 */
+
+ h1 {
+     text-decoration: underline;
+     text-align: center;
+     font-size: 50px;
+ }
