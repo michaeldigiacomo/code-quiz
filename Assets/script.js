@@ -1,9 +1,9 @@
 // Create a start button.
-var timeLeft = 5;
+var timeLeft = 60;
 var questions = [
     {
         question: "Which of the following is true about variable naming conventions in JavaScript?", 
-        choices: ["A: JavaScript variable names must begin with a letter or the underscore character", "B: JavaScript variable names are case sensitive", "C: Both of the above"],
+        choices: ["JavaScript variable names must begin with a letter or the underscore character", "JavaScript variable names are case sensitive", "Both of the above"],
         correct: "Both of the above",
     },
     {

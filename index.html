@@ -14,23 +14,72 @@
     <title>Code Quiz</title>
   </head>
   <body>
-    <div>
-      <button id="start-button" class="btn btn-primary btn-lg">
+    <div class="container">
+    <div class="col-6">
+      <button id="start-button" class="btn btn-primary btn-lg btn-block">
         Start Quiz!
       </button>
       <div id="display-timer"></div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12" >
-          <div>
-            <button type="button" class="btn btn-secondary">Answer A</button>
-            <button type="button" class="btn btn-secondary">Answer B</button>
-            <button type="button" class="btn btn-secondary">Answer C</button>
-          </div>
-        </div>
-      </div>
     </div>
+    <section>
+        <p class="questions">
+            Which of the following is true about variable naming conventions in JavaScript?
+            <div class="container">
+                <div class="row">
+                  <div class="col-12" >
+                    <div>
+                      <button type="button" class="btn  btn-secondary btn-group-verticle">JavaScript variable names must begin with a letter or the underscore character</button>
+                      <button type="button" class="btn btn-secondary">JavaScript variable names are case sensitive</button>
+                      <button type="button" class="btn btn-secondary">Both of the above</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </p>
+        <p class="questions">
+            Which of the following function of String object returns the calling string value converted to upper case?
+            <div class="container">
+                <div class="row">
+                  <div class="col-12" >
+                    <div>
+                      <button type="button" class="btn btn-secondary">toLocaleUpperCase()</button>
+                      <button type="button" class="btn btn-secondary">toUpperCase()</button>
+                      <button type="button" class="btn btn-secondary">toString()</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </p>
+        <p class="questions">
+            What is my middle name?
+            <div class="container">
+                <div class="row">
+                  <div class="col-12" >
+                    <div>
+                      <button type="button" class="btn btn-secondary">Alfred</button>
+                      <button type="button" class="btn btn-secondary">Christopher</button>
+                      <button type="button" class="btn btn-secondary">Francis</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </p>
+        <p class="questions">
+            What are variables used for in JavaScript Programs?
+            <div class="container">
+                <div class="row">
+                  <div class="col-12" >
+                    <div>
+                      <button type="button" class="btn btn-secondary">"Storing numbers, dates, or other values</button>
+                      <button type="button" class="btn btn-secondary">Varying randomly</button>
+                      <button type="button" class="btn btn-secondary">None of the above</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </p>
+    </section>
     <script src="/assets/script.js"></script>
   </body>
 </html>
