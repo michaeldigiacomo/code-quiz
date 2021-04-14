@@ -1,4 +1,6 @@
-// Create a start button.
+var correct = document.querySelectorAll('.right');
+var incorrect = document.querySelectorAll('.wrong');
+var questionArray = document.querySelectorAll('.question');
 var timeLeft = 60;
 var questions = [
     {
@@ -39,4 +41,21 @@ function countdown() {
         clearInterval(timer);
     }
 }
+
+questionArray.forEach(function (element) {
+    element.style.display = "none";
+})
+
+startBtn.addEventListener("click", function () {
+    startButton.style.display = "none";
+    startTimer();
+    displayQuestions();
+});
+incorrect.forEach(function (element) {
+    element.addEventListener("click", incorrectAns)
+})
+
+correct.forEach(function (element) {
+    element.addEventListener("click", correctAns)
+})
 
