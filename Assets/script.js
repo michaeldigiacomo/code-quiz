@@ -59,7 +59,7 @@ questionArray.forEach(function (element) {
   element.style.display = "none";
 });
 
-startButton.addEventListener("click", function () {
+startButtn.addEventListener("click", function () {
   startButton.style.display = "none";
   countdown();
   showQuestions();
@@ -80,7 +80,6 @@ function showQuestions() {
     Question++;
     questionArray[Question].style.display = "block";
   } else {
-    console.log("rightAnswer, wrongAnswer", rightAnswer, wrongAnswer);
     clearInterval(timer);
     showScore();
   }
