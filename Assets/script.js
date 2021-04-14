@@ -59,7 +59,7 @@ questionArray.forEach(function (element) {
   element.style.display = "none";
 });
 
-startBtn.addEventListener("click", function () {
+startButton.addEventListener("click", function () {
   startButton.style.display = "none";
   countdown();
   showQuestions();
