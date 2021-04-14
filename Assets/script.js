@@ -1,7 +1,7 @@
 var correct = document.querySelectorAll(".right");
 var incorrect = document.querySelectorAll(".wrong");
-correctAnswer = 0;
-incorrectAnswer = 0;
+rightAnswer = 0;
+wrongAnswer = 0;
 var questionArray = document.querySelectorAll(".question");
 var question = -1;
 var timeLeft = 60;
@@ -65,11 +65,11 @@ startBtn.addEventListener("click", function () {
   showQuestions();
 });
 incorrect.forEach(function (element) {
-  element.addEventListener("click", incorrectAns);
+  element.addEventListener("click", incorrectAnswer);
 });
 
 correct.forEach(function (element) {
-  element.addEventListener("click", correctAns);
+  element.addEventListener("click", correctAnswer);
 });
 
 function showQuestions() {
@@ -84,4 +84,15 @@ function showQuestions() {
     clearInterval(timer);
     showScore();
   }
+}
+
+function incorrectAnswer() {
+  wrongAnswer++;
+  timerLeft = timerLeft - 5;
+  displayQuestions();
+}
+function correctAnswer() {
+  rightAnswer++;
+
+  showQuestions();
 }
